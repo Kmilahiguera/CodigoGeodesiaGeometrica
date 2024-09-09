@@ -15,7 +15,7 @@ finv=float(input("Valor: "))
 f=(1/finv)
 e_cua=(2*f)-(f**2)
 b=(a*math.sqrt(1-e_cua))
-e_prim= math.sqrt((a**2 - b**2) / b**2)
+e_prim= math.sqrt((a**2 - b**2) / b)
 Long=math.atan(y/x)
 Long_deg=math.degrees(Long)
 
@@ -76,3 +76,10 @@ print("===================")
 print(f"El valor de Lat en decimal es: {phideg}")               
 print(print(f"Latitud: {latgra}° {latmin}' {latseg:.2f}''"))
 
+w= math.sqrt(1 - (e_cua*math.sin(phi)**2))
+N= a/w
+
+alth=((math.sqrt((x**2 )+ (y**2)))/(math.cos(phi)))-N
+
+print(f"El valor de N : {N}") 
+print(f"El valor de altura : {alth}") 
