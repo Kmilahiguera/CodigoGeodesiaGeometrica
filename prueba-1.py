@@ -75,6 +75,7 @@ latseg = (lat - latgra - latmin / 60) * 3600
 print("===================")
 print(f"El valor de Lat en decimal es: {phideg}")               
 print(print(f"Latitud: {latgra}° {latmin}' {latseg:.2f}''"))
+radG=(math.sqrt((x**2)+(y**2)+(z**2)))
 
 w= math.sqrt(1 - (e_cua*math.sin(phi)**2))
 N= a/w
@@ -83,3 +84,4 @@ alth=((math.sqrt((x**2 )+ (y**2)))/(math.cos(phi)))-N
 
 print(f"El valor de N : {N}") 
 print(f"El valor de altura : {alth}") 
+print(f"El valor del radio Geocentrico : {radG}") 
